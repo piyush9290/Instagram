@@ -15,7 +15,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let tabBarController = UITabBarController()
+        let layout = UICollectionViewFlowLayout()
+        let homeVC = UINavigationController(rootViewController: HomeViewController(collectionViewLayout: layout))
+        let searchVC = UINavigationController(rootViewController: SearchViewController())
+        let activityVC = UINavigationController(rootViewController: ActivityViewController())
+        let profileVC = UINavigationController(rootViewController: ProfileViewController())
+        
+        tabBarController.viewControllers = [homeVC, searchVC, activityVC, profileVC]
+        window?.rootViewController = tabBarController
+        homeVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "homeTab"), selectedImage: UIImage(named: "homeTabSolid"))
+        searchVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "searchTab"), selectedImage: UIImage(named: "searchTabSolid"))
+        activityVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "activityTab"), selectedImage: UIImage(named: "activityTabSolid"))
+        profileVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "profileTab"), selectedImage: UIImage(named: "profileTabSolid"))
+        UITabBar.appearance().tintColor = .black
+        UITabBar.appearance().barTintColor = UIColor(colorLiteralRed: 250/255, green: 250/255, blue: 250/255, alpha: 1.0)
+        UITabBar.appearance().layer.borderWidth = 0.5
+        UITabBar.appearance().layer.borderColor = UIColor.black.cgColor
+        
+        //window?.rootViewController = UINavigationController(rootViewController: HomeViewController(collectionViewLayout: layout))
+        
         return true
     }
 
