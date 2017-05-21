@@ -8,10 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var navCameraButton = UIBarButtonItem(image: UIImage(named: "cameraNav"), style: .plain, target: self, action: Selector(("didTapNavCameraButton")))
-    var navDirectButton = UIBarButtonItem(image: UIImage(named: "directNav"), style: .plain, target: self, action: Selector(("didTapNavDirectButton")))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +19,11 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         self.collectionView?.register(HomeFeedCell.self, forCellWithReuseIdentifier: "cell")
         self.collectionView?.register(HomeFeedTopCell.self, forCellWithReuseIdentifier: "cellTop")
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+        setUpNavigationBar()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,19 +60,35 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     }
     
     func didTapNavCameraButton() {
-        
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            messageAlertView(title: "Camera", message: "Camera is not available, Please check with Apple Store")
+        }
     }
     
     func didTapNavDirectButton() {
-        
+        self.navigationItem.title = ""
+        self.navigationController?.pushViewController(DirectMessageViewController(), animated: true)
+    }
+    
+    func messageAlertView(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     func setUpNavigationBar() {
         navigationItem.title = "Instagram"
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Billabong", size: 30)!]
-        navigationItem.leftBarButtonItem = navCameraButton
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "cameraNav"), style: .plain, target: self, action: #selector(didTapNavCameraButton))
         navigationItem.leftBarButtonItem?.tintColor = .black
-        navigationItem.rightBarButtonItem = navDirectButton
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "directNav"), style: .plain, target: self, action: #selector(didTapNavDirectButton))
         navigationItem.rightBarButtonItem?.tintColor = .black
     }
     

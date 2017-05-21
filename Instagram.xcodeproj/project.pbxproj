@@ -16,6 +16,8 @@
 		E5D231841EB912E80011FF7B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D231831EB912E80011FF7B /* ProfileViewController.swift */; };
 		E5D231861EB9132C0011FF7B /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D231851EB9132C0011FF7B /* ActivityViewController.swift */; };
 		E5D231881EB913410011FF7B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D231871EB913410011FF7B /* SearchViewController.swift */; };
+		E5E731701ED1458500608C33 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7316F1ED1458500608C33 /* DirectMessageViewController.swift */; };
+		E5E731721ED1459D00608C33 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E731711ED1459D00608C33 /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		E5D231831EB912E80011FF7B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E5D231851EB9132C0011FF7B /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		E5D231871EB913410011FF7B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E5E7316F1ED1458500608C33 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
+		E5E731711ED1459D00608C33 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				E5D231801EB8E1C30011FF7B /* Fonts */,
 				E5D2316C1EB8C64B0011FF7B /* AppDelegate.swift */,
 				E5D2316E1EB8C64B0011FF7B /* HomeViewController.swift */,
+				E5E7316F1ED1458500608C33 /* DirectMessageViewController.swift */,
+				E5E731711ED1459D00608C33 /* CameraViewController.swift */,
 				E5D231871EB913410011FF7B /* SearchViewController.swift */,
 				E5D231851EB9132C0011FF7B /* ActivityViewController.swift */,
 				E5D231831EB912E80011FF7B /* ProfileViewController.swift */,
@@ -162,7 +168,9 @@
 				E5D231841EB912E80011FF7B /* ProfileViewController.swift in Sources */,
 				E5D2316F1EB8C64B0011FF7B /* HomeViewController.swift in Sources */,
 				E5D2316D1EB8C64B0011FF7B /* AppDelegate.swift in Sources */,
+				E5E731721ED1459D00608C33 /* CameraViewController.swift in Sources */,
 				E5D231861EB9132C0011FF7B /* ActivityViewController.swift in Sources */,
+				E5E731701ED1458500608C33 /* DirectMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +326,7 @@
 				E5D2317D1EB8C64B0011FF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

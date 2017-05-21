@@ -23,8 +23,20 @@ class ProfileViewController: UIViewController {
         navigationItem.rightBarButtonItem?.tintColor = .black
         self.view.backgroundColor = .white
         
+        let profile: UIImageView = {
+            let imageView = UIImageView()
+            imageView.image = UIImage(named: "profile")
+            return imageView
+        }()
+        self.view.addSubview(profile)
+        self.view.addConstraintWithFormat(format: "H:|[v0]|", views: profile)
+        self.view.addConstraintWithFormat(format: "V:|-60-[v0]|", views: profile)
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,11 +25,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-342" y="48"/>
         </scene>
-        <!--View Controller-->
+        <!--Direct Message View Controller-->
         <scene sceneID="d0d-QN-W19">
             <objects>
-                <viewController id="Cp6-tD-lMR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="direct" id="Cp6-tD-lMR" customClass="DirectMessageViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ARp-KA-Irm"/>
                         <viewControllerLayoutGuide type="bottom" id="D3I-hY-jEz"/>
@@ -38,33 +38,12 @@
                     <view key="view" contentMode="scaleToFill" id="9pf-5J-idY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8dx-G6-GsX">
-                                <rect key="frame" x="16" y="28" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="6ns-f0-MiX"/>
-                                    <constraint firstAttribute="width" constant="44" id="ZMP-Uw-19i"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAz-ZB-lRR">
-                                <rect key="frame" x="68" y="40" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="QAz-ZB-lRR" firstAttribute="centerY" secondItem="8dx-G6-GsX" secondAttribute="centerY" id="GgE-d3-fPP"/>
-                            <constraint firstItem="8dx-G6-GsX" firstAttribute="top" secondItem="ARp-KA-Irm" secondAttribute="bottom" constant="8" id="TKP-6z-ZSZ"/>
-                            <constraint firstItem="QAz-ZB-lRR" firstAttribute="leading" secondItem="8dx-G6-GsX" secondAttribute="trailing" constant="8" id="hd2-Wr-YaY"/>
-                            <constraint firstItem="8dx-G6-GsX" firstAttribute="leading" secondItem="9pf-5J-idY" secondAttribute="leadingMargin" id="qA3-1h-hC7"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eEu-hE-wL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834.39999999999998" y="37.331334332833585"/>
+            <point key="canvasLocation" x="513" y="18"/>
         </scene>
     </scenes>
 </document>
