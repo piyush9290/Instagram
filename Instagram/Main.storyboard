@@ -27,23 +27,5 @@
             </objects>
             <point key="canvasLocation" x="-342" y="48"/>
         </scene>
-        <!--Direct Message View Controller-->
-        <scene sceneID="d0d-QN-W19">
-            <objects>
-                <viewController storyboardIdentifier="direct" id="Cp6-tD-lMR" customClass="DirectMessageViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ARp-KA-Irm"/>
-                        <viewControllerLayoutGuide type="bottom" id="D3I-hY-jEz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9pf-5J-idY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eEu-hE-wL3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="513" y="18"/>
-        </scene>
     </scenes>
 </document>

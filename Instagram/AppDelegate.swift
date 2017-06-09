@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().layer.borderWidth = 0.5
         UITabBar.appearance().layer.borderColor = UIColor.black.cgColor
         
-        //window?.rootViewController = UINavigationController(rootViewController: HomeViewController(collectionViewLayout: layout))
         
         return true
     }

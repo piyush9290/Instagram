@@ -18,6 +18,8 @@
 		E5D231881EB913410011FF7B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D231871EB913410011FF7B /* SearchViewController.swift */; };
 		E5E731701ED1458500608C33 /* DirectMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E7316F1ED1458500608C33 /* DirectMessageViewController.swift */; };
 		E5E731721ED1459D00608C33 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E731711ED1459D00608C33 /* CameraViewController.swift */; };
+		E5F57C621EEA1F3F00835E72 /* InstaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F57C611EEA1F3F00835E72 /* InstaAPI.swift */; };
+		E5F57C641EEA20FC00835E72 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F57C631EEA20FC00835E72 /* PhotoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		E5D231871EB913410011FF7B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E5E7316F1ED1458500608C33 /* DirectMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectMessageViewController.swift; sourceTree = "<group>"; };
 		E5E731711ED1459D00608C33 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		E5F57C611EEA1F3F00835E72 /* InstaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaAPI.swift; sourceTree = "<group>"; };
+		E5F57C631EEA20FC00835E72 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5567C4E1EE616C5005486D1 /* Web Services */ = {
+			isa = PBXGroup;
+			children = (
+				E5F57C611EEA1F3F00835E72 /* InstaAPI.swift */,
+				E5F57C631EEA20FC00835E72 /* PhotoStore.swift */,
+			);
+			name = "Web Services";
+			sourceTree = "<group>";
+		};
 		E5D231601EB8C64B0011FF7B = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +79,7 @@
 		E5D2316B1EB8C64B0011FF7B /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				E5567C4E1EE616C5005486D1 /* Web Services */,
 				E5D231801EB8E1C30011FF7B /* Fonts */,
 				E5D2316C1EB8C64B0011FF7B /* AppDelegate.swift */,
 				E5D2316E1EB8C64B0011FF7B /* HomeViewController.swift */,
@@ -164,10 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F57C641EEA20FC00835E72 /* PhotoStore.swift in Sources */,
 				E5D231881EB913410011FF7B /* SearchViewController.swift in Sources */,
 				E5D231841EB912E80011FF7B /* ProfileViewController.swift in Sources */,
 				E5D2316F1EB8C64B0011FF7B /* HomeViewController.swift in Sources */,
 				E5D2316D1EB8C64B0011FF7B /* AppDelegate.swift in Sources */,
+				E5F57C621EEA1F3F00835E72 /* InstaAPI.swift in Sources */,
 				E5E731721ED1459D00608C33 /* CameraViewController.swift in Sources */,
 				E5D231861EB9132C0011FF7B /* ActivityViewController.swift in Sources */,
 				E5E731701ED1458500608C33 /* DirectMessageViewController.swift in Sources */,

@@ -10,7 +10,9 @@ import UIKit
 
 class HomeViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-
+    var store = PhotoStore()
+    var jsonData: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,7 +20,12 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         self.collectionView?.backgroundColor = .white
         self.collectionView?.register(HomeFeedCell.self, forCellWithReuseIdentifier: "cell")
         self.collectionView?.register(HomeFeedTopCell.self, forCellWithReuseIdentifier: "cellTop")
-        
+        PhotoStore().fetchRecentPhotos(withURL: InstaAPI.interestingPhotosURL, success: {(responseStr) in
+            self.jsonData = responseStr
+            print(self.jsonData)
+        }) { (errorStr) in
+            print(errorStr)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
