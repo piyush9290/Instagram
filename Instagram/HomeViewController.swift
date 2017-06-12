@@ -21,8 +21,8 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
         self.collectionView?.register(HomeFeedCell.self, forCellWithReuseIdentifier: "cell")
         self.collectionView?.register(HomeFeedTopCell.self, forCellWithReuseIdentifier: "cellTop")
         PhotoStore().fetchRecentPhotos(withURL: InstaAPI.interestingPhotosURL, success: {(responseStr) in
-            self.jsonData = responseStr
-            print(self.jsonData)
+            //self.jsonData = responseStr
+            print(responseStr)
         }) { (errorStr) in
             print(errorStr)
         }
@@ -68,7 +68,7 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     
     func didTapNavCameraButton() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            var imagePicker = UIImagePickerController()
+            let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
             imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
             imagePicker.allowsEditing = false
@@ -101,6 +101,7 @@ class HomeViewController: UICollectionViewController, UICollectionViewDelegateFl
     
 }
 
+//UICollection Cell configuration
 class HomeFeedCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -176,6 +177,7 @@ class HomeFeedCell: UICollectionViewCell {
         return view
     }()
     
+    //UI Setup
     func setUpViews() {
         addSubview(userProfileImageView)
         addSubview(userNameLabel)
@@ -248,6 +250,7 @@ class HomeFeedTopCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 }
+// Method for constraint definition
 extension UIView {
     func addConstraintWithFormat(format: String, views: UIView...) {
         var viewsDictionary = [String: UIView]()

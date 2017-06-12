@@ -16,6 +16,8 @@ struct InstaAPI {
     private static let baseURLString = "https://api.flickr.com/services/rest"
     private static let APIKey = "a6d819499131071f158fd740860a5a88"
     
+    
+    //URL Creation for REST API
     private static func instaURL(method: Method, parameters: [String: String]?) -> URL {
         var components = URLComponents(string: baseURLString)!
         var queryItems = [URLQueryItem]()

@@ -20,6 +20,7 @@
 		E5E731721ED1459D00608C33 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5E731711ED1459D00608C33 /* CameraViewController.swift */; };
 		E5F57C621EEA1F3F00835E72 /* InstaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F57C611EEA1F3F00835E72 /* InstaAPI.swift */; };
 		E5F57C641EEA20FC00835E72 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F57C631EEA20FC00835E72 /* PhotoStore.swift */; };
+		E5F57C661EEC7DED00835E72 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F57C651EEC7DED00835E72 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E5E731711ED1459D00608C33 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		E5F57C611EEA1F3F00835E72 /* InstaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstaAPI.swift; sourceTree = "<group>"; };
 		E5F57C631EEA20FC00835E72 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		E5F57C651EEC7DED00835E72 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				E5F57C611EEA1F3F00835E72 /* InstaAPI.swift */,
 				E5F57C631EEA20FC00835E72 /* PhotoStore.swift */,
+				E5F57C651EEC7DED00835E72 /* Photo.swift */,
 			);
 			name = "Web Services";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				E5D231881EB913410011FF7B /* SearchViewController.swift in Sources */,
 				E5D231841EB912E80011FF7B /* ProfileViewController.swift in Sources */,
 				E5D2316F1EB8C64B0011FF7B /* HomeViewController.swift in Sources */,
+				E5F57C661EEC7DED00835E72 /* Photo.swift in Sources */,
 				E5D2316D1EB8C64B0011FF7B /* AppDelegate.swift in Sources */,
 				E5F57C621EEA1F3F00835E72 /* InstaAPI.swift in Sources */,
 				E5E731721ED1459D00608C33 /* CameraViewController.swift in Sources */,
